@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the image container */
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Style for the text overlay */
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.61);
+            color: #fff;
+            padding: 10px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+            transform-origin: center;
+        }
+
+        /* Hover effect: Show text and scale the image */
+        .image-container:hover .text-overlay {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="train.jpg" alt="Image">
+        <div class="text-overlay">
+            <p>This is some text that pops up when you hover over the image.</p>
+        </div>
+    </div>
+</body>
+</html>
+

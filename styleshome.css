@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.banner{
+    width:100%;
+    height:50vh;
+    background-image:linear-gradient(rgba(73, 193, 223, 0.644),rgba(126, 206, 146, 0.75)),url(home_page.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+.logo{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.content{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+    
+
+.content h1{
+    text-shadow: 20px;
+    color: color-mix(in srgb-linear, rgb(29, 78, 25) 60%, rgb(16, 14, 109) 60%);
+    height: 300px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+
+
+    
+
+
+.box p {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #111010; /* Text color */
+    text-align:var(#113146); /* Text alignment */
+    padding-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    
+}
+
+.photos1 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for individual images */
+.photos1 img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    margin-top: 10px;/* Maintain image aspect ratio */
+    transition: transform 0.2s ease-in-out;
+    border-radius:10%;
+    height:500px;
+    width:500px;
+}
+
+.text-overlay {
+    position: absolute;
+    justify-content:center;
+    top:0%;
+    left:-10%;
+    background-color: rgba(243, 243, 243, 0.7);
+    color: #080808;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform-origin: center;
+    font-size: 20px;
+}
+
+/* Hover effect: Show text and scale the image */
+.photos1:hover .text-overlay {
+    opacity: 100;
+
+}
+
+
+.photos2 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for individual images */
+.photos2 img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    margin-top: 10px;/* Maintain image aspect ratio */
+    transition: transform 0.2s ease-in-out;
+    border-radius:15%;
+    height:500px;
+    width:500px;
+    margin-right: 10px;
+}
+
+.text-overlay2 {
+    position: absolute;
+    justify-content:center;
+    top:0%;
+    left:0%;
+    background-color: rgba(243, 243, 243, 0.7);
+    color: #080808;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform-origin: center;
+    font-size: 20px;
+}
+
+/* Hover effect: Show text and scale the image */
+.photos2:hover .text-overlay2 {
+    opacity: 100;
+
+}
